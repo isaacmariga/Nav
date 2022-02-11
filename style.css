@@ -18,7 +18,24 @@ nav {
     cursor: pointer;
 }
 
+.ham {
+    height: 30px;
+    display: none;
+}
+
 @media screen and (max-width:870px) {
-    .links,
-    smedias {}
+    .smedias {
+        display: none;
+    }
+    .nav {
+        grid-template-columns: 1.5fr 2fr 0.2fr;
+    }
+    .ham {
+        display: block;
+    }
+    .links {
+        display: grid;
+        place-items: center;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
 }
