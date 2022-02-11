@@ -21,6 +21,7 @@ nav {
 .ham {
     height: 30px;
     display: none;
+    cursor: pointer;
 }
 
 #fill {
@@ -28,6 +29,7 @@ nav {
 }
 
 @media screen and (max-width:870px) {
+    .links,
     .smedias {
         display: none;
     }
@@ -36,11 +38,6 @@ nav {
     }
     .ham {
         display: block;
-    }
-    .links {
-        display: block;
-        place-items: center;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
     .link {
         padding: 10px;
