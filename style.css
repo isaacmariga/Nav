@@ -18,7 +18,8 @@ nav {
     cursor: pointer;
 }
 
-.ham {
+.ham,
+.ham2 {
     height: 30px;
     display: none;
     cursor: pointer;
