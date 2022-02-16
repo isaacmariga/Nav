@@ -1,5 +1,4 @@
 let ham = document.querySelector(".ham")
-let ham2 = document.querySelector(".ham2")
 let links = document.querySelector(".links")
 let styles = getComputedStyle(links)
 
@@ -14,7 +13,9 @@ let styles = getComputedStyle(links)
 
 
 ham.addEventListener('click', event => {
-    links.style.display = "block"
-    console.log(styles.display)
-
+    // array = []
+    // console.log(array)
+    if (styles.display.includes("none")) {
+        links.style.display = "block"
+    } else { links.style.display = "none" }
 })
